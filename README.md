@@ -37,21 +37,26 @@ Getting help from AI usually means a round trip: switch apps, paste in context,
 wait, and come back. Chord cuts straight across. Press a shortcut in whatever
 app you are working in, and the answer appears right there.
 
-## Five tools, one shortcut each
+## Six tools, one shortcut each
 
 | | Tool | Shortcut | What it does |
 | :-: | --- | :-: | --- |
 | 🔍 | **Lens** | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>L</kbd> | Screenshots with markup and text copying built in. |
 | 💬 | **Ask** | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>A</kbd> | Ask about what's on your screen: selected text, clips, or images. |
-| 📋 | **Clip** | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>V</kbd> | Your clipboard history, searchable. Find anything you've copied and paste it again. |
+| 📋 | **Clip** | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>V</kbd> | Your clipboard history, searchable. Find anything you've copied, paste it again, or translate it into another language. |
 | 📖 | **Define** | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>D</kbd> | Select any word, phrase, or sentence for a quick explanation. |
 | ✍️ | **Rewrite** | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>R</kbd> | Tidy up your writing in the tone you want, with a preview before anything changes. |
+| 🎙️ | **Dictate** | Right <kbd>⌥</kbd> | Hold and speak in any app. Your words are tidied up and typed where your cursor is. |
 
-Every shortcut is configurable in **Settings → Shortcuts**.
+Every shortcut can be changed in **Settings → Tools**, including single keys
+such as Right Option.
 
 ## Local by design
 
-- **AI runs only on your Mac.** Nothing you capture or copy is uploaded.
+- **AI runs only on your Mac.** Nothing you capture, copy, or say is uploaded.
+  Dictate never saves your audio.
+- **Web lookups are opt-in.** If you allow it, Ask can search Wikipedia using
+  only your typed question. Clips, screenshots, and history stay on your Mac.
 - **Works offline** once the first-time setup has finished.
 - **No account, no usage limits.** Download it and start working.
 - **Free.**
@@ -71,11 +76,17 @@ notes are on the [releases page](https://github.com/MatthewLi-UW/chord-releases/
 1. Open the downloaded DMG and drag **Chord** into **Applications**.
 2. Open Chord. It is signed and notarized by Apple, so macOS only asks you to
    confirm opening an app downloaded from the internet.
-3. Follow the setup. Chord downloads its AI model once (about 2.5 GB, plus
-   850 MB for optional vision support), so the first run needs an internet
-   connection.
+3. Follow the setup. Chord downloads its AI model once, so the first run needs
+   an internet connection. Pick the size that suits your Mac:
+   - **Lightweight**: about 1.3 GB, for Macs with 8 GB of memory
+   - **Balanced** (recommended): about 4.5 GB
+   - **Quality**: about 9.5 GB, for demanding tasks
+
+   Image support is an optional extra 0.7 to 0.9 GB, and Dictate's speech
+   model is 574 MB. You can switch models later in **Settings → Local AI**.
 4. Grant the permissions for the tools you want: **Accessibility** for working
-   with selected text and pasting, **Screen Recording** for Lens.
+   with selected text and pasting, **Screen Recording** for Lens, and
+   **Microphone** for Dictate.
 
 Requires **macOS 14 or later**. Stuck? See the
 [installation guide](https://chord-landing.vercel.app/help).
@@ -83,7 +94,8 @@ Requires **macOS 14 or later**. Stuck? See the
 ### Updates
 
 Chord updates itself from the releases in this repository, so once it is
-installed there is nothing more to download by hand.
+installed there is nothing more to download by hand. It checks once a day; you
+can turn that off in **Settings → General**.
 
 ## Learn more
 
